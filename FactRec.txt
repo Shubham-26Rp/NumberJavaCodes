@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main
+{   
+	public static void main(String[] args) {
+	int n;
+	Scanner s  =new Scanner(System.in);
+	System.out.println("Enter any number:");
+	n=s.nextInt();
+    Main m =new Main();
+    int res=m.RecFac(n);
+    System.out.println("Factorial of Number"+n+" Using Recurssion ="+res);
+}
+    int RecFac(int n)
+    {
+        if(n==1)
+        return 1;
+        else
+        {
+           return n*RecFac(n-1);
+        }
+    }
+}
