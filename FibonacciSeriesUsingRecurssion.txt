@@ -1,0 +1,26 @@
+import java.util.*;
+public class Main
+{   static int a,b,c,n;
+	public static void main(String[] args) {
+	Scanner s  =new Scanner(System.in);
+	System.out.println("Enter Number upto which fibonacci series ");
+	n=s.nextInt();
+	System.out.println("Enter any Two number:");
+	a=s.nextInt();
+	b=s.nextInt();
+	System.out.println("------------fibonacci series Using Recurssion----------------");
+	System.out.println(a);
+	System.out.println(b);
+	Main m= new Main();
+	m.FibRec(n);
+  } 
+  void FibRec(int n){
+      if(n>0){
+      c=a+b;
+      System.out.println(c);
+      a=b;
+      b=c;
+      FibRec(n-1);
+   }
+  }
+}
